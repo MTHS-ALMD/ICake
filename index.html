@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="shortcut icon" href="iCake.ico" type="image/x-icon">
+    <title>iCake</title>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">iCake</a>
+        <nav>
+            <ul>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="/">Produtos</a></li>
+                <li><a href="forms.html">Vendedor</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <div class="swiper mySwiper container">
+            <div class="swiper-wrapper content">
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <a href="catalogo2.html">
+                                <img src="image/catg/bento-cake-categoria.png" alt="">
+                                <a href="catalogo2.html" class="catg">Bolo Bento</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <a href="catalogo1.html">
+                                <img src="image/catg/bolo-caseiro-categoria.png" alt="">
+                                <a href="catalogo1.html" class="catg">Bolo Caseiro</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <a href="catalogo3.html">
+                                <img src="image/catg/bolo-de-aniversario-categoria.png" alt="">
+                                <a href="catalogo3.html" class="catg1">Bolo de Aniversário</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <a href="catalogo4.html">
+                            <img src="image/catg/bolo-fatia-categoria.png" alt="">
+                            <a href="catalogo4.html" class="catg">Bolo em Fatia</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <a href="catalogo5.html">
+                            <img src="image/catg/bolo-vegano-categoria.png" alt="">
+                            <a href="catalogo5.html" class="catg">Bolo Vegano</a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide card">
+                    <div class="card-content">
+                        <div class="image">
+                            <a href="catalogo.html"><img src="image/catg/categoria-bolo-de-pote.png" alt=""></a>
+                            <a href="catalogo.html" class="catg">Bolo de Pote</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </section>
+
+    
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+
+    var swiper = new Swiper(" .mySwiper",{
+        slidesPerView: 3,
+        spaceBetween: 30,
+        slidesPerGroup: 3,
+        loop: true,
+        loopFillGroupWithBlank: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation:{
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+        }
+    })
+
+    </script>
+</body>
+</html>
